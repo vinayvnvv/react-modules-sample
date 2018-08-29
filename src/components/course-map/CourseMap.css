@@ -1,0 +1,15 @@
+._lists {
+  display: flex; }
+  ._lists > ._item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0 -5px; }
+    ._lists > ._item > ._path svg > polygon {
+      fill: gainsboro; }
+    ._lists > ._item.active > ._path svg > polygon {
+      fill: #f7b400; }
+    ._lists > ._item.completed > ._path svg > polygon {
+      fill: #9cb533; }
+    ._lists > ._item > ._name {
+      font-size: 16px; }

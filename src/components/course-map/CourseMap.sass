@@ -1,0 +1,23 @@
+$default-path-arrow-color: rgb(220, 220, 220)
+$active-path-arrow-color: rgb(247, 180, 0)
+$completed-path-arrow-color: rgb(156, 181, 51)
+._lists
+	display: flex
+	&>._item
+		display: flex
+		flex-direction: column
+		cursor: pointer
+		margin: 0 -5px
+		&>._path
+			& svg> polygon
+				fill: $default-path-arrow-color
+		&.active
+			&>._path
+				& svg> polygon
+					fill: $active-path-arrow-color
+		&.completed
+			&>._path
+				& svg> polygon
+					fill: $completed-path-arrow-color
+		&>._name
+			font-size: 16px
