@@ -52,7 +52,7 @@ class CarrerList extends Component {
                   <Row gutter={60}>
                     {this.state.careerList.map((item, index) =>
                       <Col span={8} xs={24} sm={12} lg={8} key={index} >
-                        <CareerListItem item={item} index={index}/>
+                        <CareerListItem item={item} index={index} onItemClick={this.onItemClick}/>
                       </Col>
                     )}
                   </Row>

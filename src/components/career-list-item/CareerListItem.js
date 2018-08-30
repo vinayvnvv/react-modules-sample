@@ -15,7 +15,7 @@ class CareerListItem extends Component {
 
   render() {
     return (
-          <div className={'_item'} onClick={this.onItemClick.bind(this)}>
+          <div className={'CareerListItem _item'} onClick={this.onItemClick.bind(this)}>
             <div className="_avtr"  style={ {backgroundImage: "url('" + this.props.item.img + "')"} }>
               <div className="_actnicn"></div>
             </div>
