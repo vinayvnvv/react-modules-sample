@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin: 0 -5px; }
+    margin: 0 -5px;
+    align-items: center; }
     ._lists > ._item > ._path svg > polygon {
       fill: gainsboro; }
     ._lists > ._item.active > ._path svg > polygon {
