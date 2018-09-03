@@ -1,4 +1,5 @@
-@import './../../sass/vars.sass'
+@import './../../sass/util/vars.sass'
+@import './../../sass/util/mixins.sass'
 .app-header
 	height: $app-header-height
 	background-color: $app-header-bg-color
@@ -8,6 +9,8 @@
 			display: flex
 			align-items: center
 			margin: 0 11px
+		&>.hamburger
+			display: none
 	&>.h-right
 		flex-grow: 1
 		justify-content: flex-end
@@ -41,3 +44,54 @@
 					min-width: 1px
 					height: 70%
 					background-color: #d9d9d9
+	// mobile handle
+	+media-only-mobile
+		&>.h-right
+			display: none
+		&>.h-left
+			justify-content: space-between
+			width: 100%
+			&>.hamburger
+				display: block
+				margin-right: 11px
+		&.menu-active
+			height: auto
+			flex-direction: column
+			align-items: flex-start
+			box-shadow: 1px 1px 9px 6px #d9d9d9
+			&>.h-left
+				height: $app-header-height
+				&>.hamburger
+					& span:nth-child(1)
+						transform: rotate(45deg)
+						top: -1px
+						left: 5px
+					& span:nth-child(2)
+						width: 0%
+						opacity: 0
+					& span:nth-child(3)
+						transform: rotate(-45deg)
+						top: 11px
+						left: 1px
+			&>.h-right
+				display: flex
+				align-items: flex-start
+				width: 100%
+				flex-direction: column
+				&>.h-item
+					flex-direction: column
+					padding: 11px 0
+					padding-left: 21px
+					width: 100%
+					margin: 0px
+					align-items: flex-start
+					&.active:before
+						height: 100%
+						min-width: 4px
+						max-width: 4px
+					&.h-divider
+						width: 100%
+						&>div
+							min-width: 100%
+							min-height: 1px
+							max-height: 1px

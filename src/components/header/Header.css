@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;
     margin: 0 11px; }
+  .app-header > .h-left > .hamburger {
+    display: none; }
   .app-header > .h-right {
     flex-grow: 1;
     justify-content: flex-end; }
@@ -39,3 +41,52 @@
           min-width: 1px;
           height: 70%;
           background-color: #d9d9d9; }
+  @media screen and (max-width: 768px) {
+    .app-header > .h-right {
+      display: none; }
+    .app-header > .h-left {
+      justify-content: space-between;
+      width: 100%; }
+      .app-header > .h-left > .hamburger {
+        display: block;
+        margin-right: 11px; }
+    .app-header.menu-active {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 1px 1px 9px 6px #d9d9d9; }
+      .app-header.menu-active > .h-left {
+        height: 62px; }
+        .app-header.menu-active > .h-left > .hamburger span:nth-child(1) {
+          transform: rotate(45deg);
+          top: -1px;
+          left: 5px; }
+        .app-header.menu-active > .h-left > .hamburger span:nth-child(2) {
+          width: 0%;
+          opacity: 0; }
+        .app-header.menu-active > .h-left > .hamburger span:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 11px;
+          left: 1px; }
+      .app-header.menu-active > .h-right {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column; }
+        .app-header.menu-active > .h-right > .h-item {
+          flex-direction: column;
+          padding: 11px 0;
+          padding-left: 21px;
+          width: 100%;
+          margin: 0px;
+          align-items: flex-start; }
+          .app-header.menu-active > .h-right > .h-item.active:before {
+            height: 100%;
+            min-width: 4px;
+            max-width: 4px; }
+          .app-header.menu-active > .h-right > .h-item.h-divider {
+            width: 100%; }
+            .app-header.menu-active > .h-right > .h-item.h-divider > div {
+              min-width: 100%;
+              min-height: 1px;
+              max-height: 1px; } }

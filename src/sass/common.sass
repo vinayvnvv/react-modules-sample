@@ -1,0 +1,21 @@
+.hamburger
+	width: 36px
+	height: 26px
+	position: relative
+	transform: rotate(0deg)
+	cursor: pointer
+	& span
+		background: #000
+		min-height: 3px
+		min-width: 100%
+		position: absolute
+		transition: 0.1s all
+	& span:nth-child(1)
+		top: 0px
+		transform-origin: left center
+	& span:nth-child(2)
+		top: 13px
+		transform-origin: left center
+	& span:nth-child(3)
+		top: 26px
+	

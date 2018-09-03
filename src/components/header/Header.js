@@ -3,15 +3,34 @@ import './Header.css';
 import logo from './../../logo.png'
 import { Button } from 'antd';
 
-class Header extends Component {
+interface IState {
+  isMenuOpen: boolean;
+}
 
+class Header extends Component {
+  state: IState;
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMenuOpen: false
+    };
+  }
+
+  toggleMenu() {
+    this.setState({isMenuOpen: !this.state.isMenuOpen});
+  }
 
   render() {
     return (
-         <div className="app-header">
+         <div className={"app-header " + (this.state.isMenuOpen ? 'menu-active' : '')}>
           <div className="h-left">
             <div className="h-logo">
               <img src={logo} alt='logo'/>
+            </div>
+            <div className="hamburger" onClick={this.toggleMenu.bind(this)}>
+              <span/>
+              <span/>
+              <span/>
             </div>
           </div>
           <div className="h-right">
