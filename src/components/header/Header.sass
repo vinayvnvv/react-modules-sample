@@ -1,0 +1,43 @@
+@import './../../sass/vars.sass'
+.app-header
+	height: $app-header-height
+	background-color: $app-header-bg-color
+	display: flex
+	&>.h-left
+		&>.h-logo
+			display: flex
+			align-items: center
+			margin: 0 11px
+	&>.h-right
+		flex-grow: 1
+		justify-content: flex-end
+	&>.h-left, &>.h-right
+		display: flex
+		align-items: center
+		height: 100%
+		&>.h-item
+			display: flex
+			align-items: center
+			height: 100%
+			justify-content: center
+			margin: 0 27px
+			font-size: 16.5px
+			position: relative
+			cursor: pointer
+			&.active
+				font-weight: bold
+				cursor: default
+				&:before
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					min-height: 4px
+					background-color: $primary
+			&.h-divider
+				margin: 0 7px
+				&>div
+					min-width: 1px
+					height: 70%
+					background-color: #d9d9d9

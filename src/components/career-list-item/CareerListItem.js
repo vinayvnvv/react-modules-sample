@@ -3,9 +3,6 @@ import './CareerListItem.css';
 
 class CareerListItem extends Component {
 
-  constructor(props) {
-    super(props);
-  }
 
   onItemClick() {
     if(this.props.onItemClick)

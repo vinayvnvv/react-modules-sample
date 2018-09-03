@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
-import 'antd/dist/antd.css';
+import './sass/main.css';
 import Path from './components/path/Path';
 import CarrerList from './components/carreer-list/CarreerList';
+import LayoutApp from './components/layout/Layout';
 import {
   BrowserRouter as Router,
   Route,
@@ -16,15 +16,15 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <ul>
+          <ul className="_l">
             <li><Link to="/path">Path design</Link></li>
             <li><Link to="/list">List design</Link></li>
+            <li><Link to="/layout">Layout</Link></li>
           </ul>
-
-          <hr/>
 
           <Route path="/path" component={Path}/>
           <Route path="/list" component={CarrerList}/>
+          <Route path="/layout" component={LayoutApp}/>
         </div>
       </Router>
     );

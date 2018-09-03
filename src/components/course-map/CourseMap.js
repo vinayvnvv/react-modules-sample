@@ -3,9 +3,6 @@ import './CourseMap.css';
 
 class CourseMap extends Component {
 
-  constructor(props) {
-    super(props);
-  }
 
   onItemClick(item, index) {
     this.props.onItemClick(item, index);

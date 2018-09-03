@@ -1,0 +1,41 @@
+.app-header {
+  height: 62px;
+  background-color: #fff;
+  display: flex; }
+  .app-header > .h-left > .h-logo {
+    display: flex;
+    align-items: center;
+    margin: 0 11px; }
+  .app-header > .h-right {
+    flex-grow: 1;
+    justify-content: flex-end; }
+  .app-header > .h-left, .app-header > .h-right {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .app-header > .h-left > .h-item, .app-header > .h-right > .h-item {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: center;
+      margin: 0 27px;
+      font-size: 16.5px;
+      position: relative;
+      cursor: pointer; }
+      .app-header > .h-left > .h-item.active, .app-header > .h-right > .h-item.active {
+        font-weight: bold;
+        cursor: default; }
+        .app-header > .h-left > .h-item.active:before, .app-header > .h-right > .h-item.active:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          min-height: 4px;
+          background-color: #e3ad00; }
+      .app-header > .h-left > .h-item.h-divider, .app-header > .h-right > .h-item.h-divider {
+        margin: 0 7px; }
+        .app-header > .h-left > .h-item.h-divider > div, .app-header > .h-right > .h-item.h-divider > div {
+          min-width: 1px;
+          height: 70%;
+          background-color: #d9d9d9; }

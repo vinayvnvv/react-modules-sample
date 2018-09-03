@@ -1,0 +1,10 @@
+.app-layout > .app-header {
+  position: fixed;
+  width: 100%;
+  z-index: 44;
+  top: 0;
+  left: 0; }
+
+.app-layout > .app-content {
+  margin-top: 62px;
+  background-color: #fafafa; }
