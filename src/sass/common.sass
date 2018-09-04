@@ -1,3 +1,4 @@
+@import './util/vars.sass'
 .hamburger
 	width: 36px
 	height: 26px
@@ -18,4 +19,10 @@
 		transform-origin: left center
 	& span:nth-child(3)
 		top: 26px
-	
+
+.divider-x
+	min-height: 4px
+	position: relative
+	background-color: #000
+	&.primary
+		background-color: $primary

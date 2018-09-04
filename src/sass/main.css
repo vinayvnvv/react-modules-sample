@@ -8,6 +8,17 @@
 .app-layout > .app-content {
   margin-top: 62px;
   background-color: #fafafa; }
+  .app-layout > .app-content > .app-container > .app-banner {
+    min-height: 400px;
+    width: 100%;
+    background-color: #000;
+    position: relative; }
+  .app-layout > .app-content > .app-container > .app-main {
+    margin-top: -89px; }
+    .app-layout > .app-content > .app-container > .app-main > .app-main-box {
+      background-color: #fff;
+      position: relative;
+      box-shadow: 2px 2px 20px 2px #d9d9d961; }
 
 .hamburger {
   width: 36px;
@@ -29,3 +40,10 @@
     transform-origin: left center; }
   .hamburger span:nth-child(3) {
     top: 26px; }
+
+.divider-x {
+  min-height: 4px;
+  position: relative;
+  background-color: #000; }
+  .divider-x.primary {
+    background-color: #e3ad00; }

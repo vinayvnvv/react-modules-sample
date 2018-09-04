@@ -18,3 +18,10 @@
     transform-origin: left center; }
   .hamburger span:nth-child(3) {
     top: 26px; }
+
+.divider-x {
+  min-height: 4px;
+  position: relative;
+  background-color: #000; }
+  .divider-x.primary {
+    background-color: #e3ad00; }

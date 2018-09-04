@@ -1,0 +1,38 @@
+.future-component > ._ttl-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 31px 0; }
+  .future-component > ._ttl-bar > ._ttl {
+    font-size: 27px;
+    color: #000; }
+  .future-component > ._ttl-bar > ._sub-ttl {
+    color: #777; }
+
+.future-component > ._body {
+  padding-bottom: 31px; }
+  .future-component > ._body ._item {
+    padding: 11px 41px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .future-component > ._body ._item > ._avtr {
+      min-height: 80px;
+      min-width: 80px;
+      position: relative;
+      border: 1px solid #d9d9d9;
+      border-radius: 50em;
+      margin: 21px 0;
+      box-shadow: 2px 2px 20px 2px #d9d9d961; }
+    .future-component > ._body ._item > ._ttl {
+      font-size: 23px;
+      color: #444;
+      text-align: center; }
+    .future-component > ._body ._item > ._sub-ttl {
+      color: #777;
+      margin-top: 13px;
+      line-height: 1.7;
+      text-align: center; }
+    .future-component > ._body ._item > ._action {
+      margin-top: 17px; }
