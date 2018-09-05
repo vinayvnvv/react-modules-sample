@@ -4,6 +4,8 @@ import { Row, Col } from 'antd';
 
 import Future from './future/Future'
 
+import MarketPlaceBottom from './market-place-bottom/MarketPlaceBottom'
+
 
 import Header from './../header/Header';
 
@@ -21,6 +23,7 @@ class LayoutApp extends Component {
                   <Future/>
                 </Col>
               </Row>
+              <MarketPlaceBottom/>
           </div>
         </div>
         

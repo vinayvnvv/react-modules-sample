@@ -1,0 +1,51 @@
+.market-place-bottom-component {
+  margin-top: 31px; }
+  .market-place-bottom-component > ._banner-quote {
+    background-color: #000;
+    min-height: 300px;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px; }
+    .market-place-bottom-component > ._banner-quote ._author {
+      font-weight: bold;
+      margin-left: 31px; }
+  .market-place-bottom-component > ._stats {
+    min-height: 120px; }
+    .market-place-bottom-component > ._stats > ._question {
+      background-color: #ae7c00;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: bold; }
+    .market-place-bottom-component > ._stats > ._stat_item {
+      background-color: #f8b500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 11px; }
+      .market-place-bottom-component > ._stats > ._stat_item > ._avtar {
+        min-width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .market-place-bottom-component > ._stats > ._stat_item > ._avtar > span {
+          min-height: 40px;
+          min-width: 40px;
+          border-radius: 50em;
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute; }
+      .market-place-bottom-component > ._stats > ._stat_item > ._body {
+        flex-grow: 1; }
+        .market-place-bottom-component > ._stats > ._stat_item > ._body > ._title {
+          font-weight: bold;
+          font-size: 18px; }
+      @media screen and (max-width: 768px) {
+        .market-place-bottom-component > ._stats > ._stat_item {
+          min-height: 70px; } }

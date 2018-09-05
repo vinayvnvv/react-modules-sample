@@ -1,0 +1,52 @@
+@import './../../../sass/util/vars.sass'
+@import './../../../sass/util/mixins.sass'
+.market-place-bottom-component
+	margin-top: 31px
+	&>._banner-quote
+		background-color: #000
+		min-height: 300px
+		position: relative
+		color: #fff
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 27px
+		& ._author
+			font-weight: bold
+			margin-left: 31px
+	&>._stats
+		min-height: 120px
+		&>._question
+			background-color: $primary-dark
+			color: $primary-invert
+			display: flex
+			align-items: center
+			justify-content: center
+			text-transform: uppercase
+			font-size: 25px
+			font-weight: bold
+		&>._stat_item
+			background-color: $primary
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 0 11px
+			&>._avtar
+				min-width: 100px
+				height: 100%
+				display: flex
+				align-items: center
+				justify-content: center
+				&>span
+					min-height: 40px
+					min-width: 40px
+					border-radius: 50em
+					background-color: transparentize(#000, 0.7)
+					position: absolute
+			&>._body
+				flex-grow: 1
+				&>._title
+					font-weight: bold
+					font-size: 18px
+			+media-only-mobile
+				min-height: 70px
